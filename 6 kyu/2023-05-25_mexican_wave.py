@@ -30,3 +30,22 @@
 # Example
 # wave("hello") => ["Hello", "hEllo", "heLlo", "helLo", "hellO"]
 # Good luck and enjoy!
+
+
+def wave(people):
+    wave_output = []
+    for i in range(len(people)):
+        if people[i].isalpha():
+            capital = people[i].upper()
+            person = people[0:i] + capital + people[i+1:]
+            wave_output.append(person)
+    return wave_output
+
+
+# best practice solution
+def wave2(str):
+    return [
+        str[:i] + str[i].upper() + str[i+1:]
+        for i in range(len(str))
+        if str[i].isalpha()
+    ]
