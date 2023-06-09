@@ -61,7 +61,7 @@
 # advanced.
 
 
-from preloaded import MORSE_CODE
+from preloaded import MORSE_CODE  # type: ignore
 
 
 def decode_morse(morse_code):
