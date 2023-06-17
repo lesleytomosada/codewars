@@ -12,6 +12,7 @@
 # the most trivial solutions might time out. Numbers go up to 2^31 ( or
 # similar, depending on language ). Looping all the way up to n, or n/2, will
 # be too slow.
+
 # Example
 # is_prime(1)  /* false */
 # is_prime(2)  /* true  */
