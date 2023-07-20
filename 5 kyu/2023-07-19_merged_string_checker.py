@@ -14,3 +14,17 @@
 #     s:  c o d e w a r s   = codewars
 # part1:  c   d   w         = cdw
 # part2:    o   e   a r s   = oears
+
+
+def solution(s, part1, part2):
+    if sorted(s) != sorted(part1 + part2):
+        return False
+    s1 = s2 = ""
+    for i in s:
+        if part1 and part1[0] == i:
+            s1 += i
+            part1 = part1[1:]
+        if part2 and part2[0] == i:
+            s2 += i
+            part2 = part2[1:]
+    return sorted(s1 + s2) == sorted(s)
