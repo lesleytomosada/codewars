@@ -21,5 +21,4 @@ function validatePIN (pin) {
       }
       return true
     }
-    
   }
