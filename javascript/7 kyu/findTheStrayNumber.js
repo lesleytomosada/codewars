@@ -7,5 +7,13 @@
 // Examples
 // [1, 1, 2] ==> 2
 // [17, 17, 3, 17, 17, 17, 17] ==> 3
-// FUNDAMENTALSALGORITHMS
-// Suggest kata description edits
+
+
+function stray(numbers) {
+    numbers.sort();
+    if(numbers[0]===numbers[1]){
+      return numbers[numbers.length-1];
+    }else{
+      return numbers[0];
+    }
+  }
