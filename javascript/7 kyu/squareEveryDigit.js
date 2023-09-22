@@ -8,17 +8,20 @@
 
 // Happy Coding!
 
-function squareDigits(num){
-    let strNum = num.toString() 
-    let strArr = strNum.split("")
-    for (let i = 0; i<strArr.length; i++) {
-      strArr[i] = strArr[i] * strArr[i]
-    }
-    let squaredNum = strArr.join('')
-    return Number(squaredNum)
+function squareDigits(num) {
+  let strNum = num.toString();
+  let strArr = strNum.split("");
+  for (let i = 0; i < strArr.length; i++) {
+    strArr[i] = strArr[i] * strArr[i];
   }
+  let squaredNum = strArr.join("");
+  return Number(squaredNum);
+}
 
-
-  function squareDigits2(num){
-    return +num.toString().split('').map(i => i*i).join('');
-  }
+function squareDigits2(num) {
+  return +num
+    .toString()
+    .split("")
+    .map((i) => i * i)
+    .join("");
+}
