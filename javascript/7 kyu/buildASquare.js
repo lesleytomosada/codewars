@@ -6,3 +6,16 @@
 // +++
 // +++
 // +++
+
+function generateShape(integer){
+    let shape = []
+    for (let i = 0; i<integer; i++){
+      let line = ("+".repeat(integer))
+      shape.push(line)
+    }
+    return shape.join('\n')
+  }
+
+  function generateShape2(n){
+    return ("+".repeat(n)+"\n").repeat(n).trim()
+  }
